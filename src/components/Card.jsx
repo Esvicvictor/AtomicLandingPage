@@ -1,7 +1,7 @@
 // Card.jsx
 import React from "react";
 
-const Card = ({ img, title, description, bg }) => {
+const Card = ({ img, title, description }) => {
   return (
     <div className='propsContainer'>
       <div className="propsBox">
