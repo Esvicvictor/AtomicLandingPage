@@ -169,10 +169,10 @@ nav {
     margin-top: 1rem;
     width: 100%;
   }
-  .propsBox{
+  .propsBox {
     margin-bottom: 3rem;
   }
-  .card{
+  .card {
     width: 95%;
   }
 }
@@ -191,7 +191,327 @@ nav {
     margin-top: 1rem;
     width: 90%;
   }
-  .propsBox{
+  .propsBox {
     margin-bottom: 3rem;
+  }
+}
+
+/* PRODUCT.JSX */
+
+
+.productHover{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* PRODUCT.JSX SECTION */
+.courses {
+  text-align: center;
+}
+.courses h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: rgb(122, 122, 122);
+  bottom: -22rem;
+  left: calc(50% - 60px);
+}
+
+.courses h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: rgb(0, 83, 0);
+  bottom: -22rem;
+  left: calc(50% - 20px);
+  margin-bottom: -1px;
+}
+.courses h1 {
+  font-size: 35px;
+  padding-top: 2rem;
+  color: rgb(1, 78, 1);
+}
+.courses p {
+  width: 70%;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 20px;
+}
+.cardProfile {
+  border: 1px solid;
+  margin: 40px 0;
+  padding: 20px;
+  width: 30%;
+  background-color: rgba(240, 249, 255, 0.616);
+  box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+  border-radius: 20px;
+  border: 0;
+}
+.cardProfile h1 {
+  font-size: 22px;
+  margin-top: 2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+.cardProfile p {
+  text-align: center;
+}
+.flexFirst {
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(200, 250, 200, 0.418);
+}
+.flexSecond {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(200, 250, 200, 0.418);
+}
+.cardProfileSecond {
+  border: 1px solid;
+  margin: 40px 0;
+  padding: 20px;
+  width: 30%;
+  background-color: rgba(240, 249, 255, 0.616);
+  box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+  border-radius: 20px;
+  border: 0;
+}
+.cardProfileSecond h1 {
+  font-size: 22px;
+  margin-top: 2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+.cardProfileSecond p {
+  text-align: center;
+}
+
+.cardProfileThird {
+  border: 1px solid;
+  margin: 40px 0;
+  padding: 20px;
+  width: 30%;
+  background-color: rgba(240, 249, 255, 0.616);
+  box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+  border-radius: 20px;
+  border: 0;
+}
+.cardProfileThird {
+  border: 1px solid;
+  margin: 40px 0;
+  padding: 20px;
+  width: 30%;
+  background-color: rgba(240, 249, 255, 0.616);
+  box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+  border-radius: 20px;
+  border: 0;
+}
+.cardProfileThird h1 {
+  font-size: 22px;
+  margin-top: 2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+.cardProfileThird p {
+  text-align: center;
+}
+.cardProfileThird img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.flexThird {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(200, 250, 200, 0.418);
+}
+
+@media (max-width: 700px) {
+  .productHover{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+  }
+  .courses h1{
+    font-size: 28px;
+  }
+  .courses p{
+    font-size: 17px;
+    width: 90%;
+    margin-top: 15px;
+  }
+  .courses h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: rgb(122, 122, 122);
+    bottom: -70rem;
+    left: calc(50% - 60px);
+  }
+  
+  .courses h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: rgb(0, 83, 0);
+    bottom: -70rem;
+    left: calc(50% - 20px);
+    margin-bottom: -1px;
+  }
+  .flexThird {
+    flex-direction: column;
+  }
+  .flexSecond {
+    flex-direction: column;
+  }
+  .flexFirst {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(200, 250, 200, 0.418);
+  }
+  .cardProfile {
+    border: 1px solid;
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(240, 249, 255, 0.616);
+    box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+    border-radius: 20px;
+    border: 0;
+  }
+  .cardProfile img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cardProfileSecond {
+    border: 1px solid;
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(240, 249, 255, 0.616);
+    box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+    border-radius: 20px;
+    border: 0;
+  }
+  .cardProfileSecond img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cardProfileThird {
+    border: 1px solid;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(240, 249, 255, 0.616);
+    box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+    border-radius: 20px;
+    border: 0;
+  }
+  .cardProfileThird img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  .courses h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: rgb(122, 122, 122);
+    bottom: -55rem;
+    left: calc(50% - 60px);
+  }
+  
+  .courses h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: rgb(0, 83, 0);
+    bottom: -55rem;
+    left: calc(50% - 20px);
+    margin-bottom: -1px;
+  }
+  .flexThird {
+    flex-direction: column;
+  }
+  .flexSecond {
+    flex-direction: column;
+  }
+  .flexFirst {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(200, 250, 200, 0.418);
+  }
+  .cardProfile {
+    border: 1px solid;
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(240, 249, 255, 0.616);
+    box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+    border-radius: 20px;
+    border: 0;
+  }
+  .cardProfile img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cardProfileSecond {
+    border: 1px solid;
+    margin: 40px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(240, 249, 255, 0.616);
+    box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+    border-radius: 20px;
+    border: 0;
+  }
+  .cardProfileSecond img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cardProfileThird {
+    border: 1px solid;
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(240, 249, 255, 0.616);
+    box-shadow: 1px 1px 2px 1px rgba(3, 51, 3, 0.288);
+    border-radius: 20px;
+    border: 0;
+  }
+  .cardProfileThird img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

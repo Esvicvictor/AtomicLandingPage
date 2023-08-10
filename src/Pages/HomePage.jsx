@@ -3,7 +3,8 @@ import Navbar from '../components/Navbar'
 import Hero from './Hero'
 // import Modal from '../components/Modal'
 import About from './About'
-import Comment from './Comment'
+import Product from './Product'
+// import Comment from './Comment'
 
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Navbar/>
       <Hero/>
       <About/>
+      <Product/>
       {/* <Comment/> */}
       {/* <Modal/> */}
     </div>
