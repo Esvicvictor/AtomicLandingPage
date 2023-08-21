@@ -24,7 +24,7 @@ const TeamData = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0zz4ioBG0X5g0NY6HYPoFvVdr50SALUJUsw&usqp=CAU",
     name: "Irene Archibong",
     title: "Novel Manikin",
-    about: "A 2500 pages creates a MANSION",
+    about: "World through BOOKS",
     id: 4,
   },
 ];

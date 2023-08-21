@@ -7,15 +7,15 @@ import {MdNextPlan} from 'react-icons/md'
 const Team = () => {
   const [teamDisplay, setTeamDisplay] = useState(TeamData);
   const [index, setIndex] = useState(0);
-  const [profile, setProfile] = useState({
+  const [profileCard, setProfileCard] = useState({
     img: teamDisplay[index].img,
     name: teamDisplay[index].name,
     title: teamDisplay[index].title,
     about: teamDisplay[index].about,
   });
 
-  const updateProfile = (newIndex) => {
-    setProfile({
+  const updateProfileCard = (newIndex) => {
+    setProfileCard({
       img: teamDisplay[newIndex].img,
       name: teamDisplay[newIndex].name,
       title: teamDisplay[newIndex].title,
@@ -26,20 +26,20 @@ const Team = () => {
   const Decrement = () => {
     if (index > 0) {
         setIndex((prevIndex) => prevIndex - 1);
-      updateProfile(index - 1);
+      updateProfileCard(index - 1);
     }
   };
 
   const Increment = () => {
     if (index < teamDisplay.length - 1) {
       setIndex((prevIndex) => prevIndex + 1);
-      updateProfile(index + 1);
+      updateProfileCard(index + 1);
     }
   };
 
   return (
     <div className=''>
-      <div className='md:w-[100%]  bg-lime-950'>
+      <div className='bg-lime-950'>
         <div className='text-2xl text-white text-center'>
           <h1 className='py-3 teamHeader'>Meet Our Team</h1>
           <p className='teamParagraph'>
@@ -50,17 +50,17 @@ const Team = () => {
           </p>
         </div>
 
-        <div className='py-7 sm:px-4 flex md:flex-row flex-col flex-wrap justify-center gap-8 items-center'>
+        <div className="mt-5 mb-3">
           <div className='hover:cursor-pointer'>
             <div className='teamElements shadow flex flex-col items-center py-5 px-6 mx-auto bg-white rounded-[1rem] hover:scale-95 transition imageTeam'>
               <img
-                src={profile.img}
+                src={profileCard.img}
                 alt='image'
                 className='w-[150px] h-[150px] object-cover rounded-full'
               />
-              <h1 className='font-extrabold text-[26px] text-green-950'>{profile.name}</h1>
-              <h2 className=" bg-lime-950 p-2 px-10 text-white">{profile.title}</h2>
-              <p className="font-bold text-[18px] text-center md:text-[21px] text-green-950">{profile.about}</p>
+              <h1 className='font-extrabold text-[26px] text-green-950'>{profileCard.name}</h1>
+              <h2 className=" bg-lime-950 p-2 px-10 text-white">{profileCard.title}</h2>
+              <p className="font-bold text-[18px] text-center md:text-[21px] text-green-950">{profileCard.about}</p>
             </div>
           </div>
         </div>
