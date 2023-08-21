@@ -22,7 +22,7 @@ export default function Product() {
 
       <div className='bg-green-950 text-white py-2'>
         <ul className='flex lg:flex-row justify-between items-center productHover'>
-          <button onClick={() => setActive("FirstCard")}>TECH COURSES</button>
+          <button onClick={() => setActive("FirstCard")}>CODING COURSES</button>
           <button onClick={() => setActive("SecondCard")}>
             NON-CODING COURSES
           </button>
@@ -33,7 +33,7 @@ export default function Product() {
       </div>
 
       <div>
-        {active === "FirstCard" && <ProfileCard data={CardData} />}
+        {active === "FirstCard" && <ProfileCard data={CardData } />}
         {active === "SecondCard" && (
           <ProfileSecondCard data={ProfileSecondData} />
         )}
