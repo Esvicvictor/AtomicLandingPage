@@ -523,6 +523,9 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.teamElements{
+  text-align: center;
+}
 .teamHeader {
   font-size: 40px;
   padding-top: 3rem;
@@ -561,14 +564,21 @@ nav {
     color: white;
   }
   .teamElements h1 {
-    font-size: 23px;
+    font-size: 19px;
     letter-spacing: 1px;
+    margin-top: 1rem;
+  }
+  .teamElements img{
+    width: 120px;
+    height: 120px;
   }
   .teamElements h2 {
     padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 10px;
   }
   .teamElements p {
-    font-size: 17px;
+    font-size: 14px;
     margin-top: 5px;
   }
 }
