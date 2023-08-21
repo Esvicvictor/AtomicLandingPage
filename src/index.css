@@ -198,8 +198,7 @@ nav {
 
 /* PRODUCT.JSX */
 
-
-.productHover{
+.productHover {
   display: flex;
   justify-content: space-evenly;
 }
@@ -342,15 +341,15 @@ nav {
 }
 
 @media (max-width: 700px) {
-  .productHover{
+  .productHover {
     display: flex;
     justify-content: space-evenly;
     font-size: 14px;
   }
-  .courses h1{
+  .courses h1 {
     font-size: 28px;
   }
-  .courses p{
+  .courses p {
     font-size: 17px;
     width: 90%;
     margin-top: 15px;
@@ -365,7 +364,7 @@ nav {
     bottom: -70rem;
     left: calc(50% - 60px);
   }
-  
+
   .courses h1::after {
     content: "";
     position: absolute;
@@ -446,7 +445,7 @@ nav {
     bottom: -55rem;
     left: calc(50% - 60px);
   }
-  
+
   .courses h1::after {
     content: "";
     position: absolute;
@@ -513,5 +512,74 @@ nav {
   .cardProfileThird img {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* Team Display */
+.teamParagraph {
+  width: 70%;
+  margin: auto;
+  font-size: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.teamHeader {
+  font-size: 40px;
+  padding-top: 3rem;
+}
+.imageTeam {
+  width: 500px;
+}
+.previousIconTeam {
+  font-size: 37px;
+  color: white;
+}
+.nextIconTeam {
+  font-size: 37px;
+  color: white;
+}
+@media (max-width: 700px) {
+  .teamHeader {
+    font-size: 28px;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  .teamParagraph {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+  }
+  .imageTeam {
+    width: 280px;
+  }
+  .previousIconTeam {
+    font-size: 27px;
+    color: white;
+  }
+  .nextIconTeam {
+    font-size: 27px;
+    color: white;
+  }
+  .teamElements h1 {
+    font-size: 23px;
+    letter-spacing: 1px;
+  }
+  .teamElements h2 {
+    padding: 5px 10px;
+  }
+  .teamElements p {
+    font-size: 17px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  .teamHeader {
+    font-size: 28px;
+  }
+  .teamParagraph {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
   }
 }
